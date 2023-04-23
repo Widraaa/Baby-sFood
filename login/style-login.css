@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   align-items: center;
   display: flex;
@@ -18,11 +19,10 @@ body {
   width: 768px;
   max-width: 100%;
   min-height: 480px;
-  background: linear-gradient(to right, #df9f6d, #ffffff);
-  background: url(img/bglogin.png);
-  border-radius: 10px;
+  background: #df9f6d;
+  border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 25), 0 10px 10px rgba(0, 0, 0, 22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .sign-up,
@@ -92,7 +92,7 @@ button {
   outline: none;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: transform 80mx ease-in;
+  transition: transform 80ms ease-in;
   cursor: pointer;
 }
 button:active {
@@ -100,13 +100,13 @@ button:active {
 }
 #signIn,
 #signUp {
-  background-color: transparent;
-  border: 2px solid #fff;
-}
-.container.right-panel-active .sign-up {
-  transform: translateX(100%);
+  background-color: #ffd4b2;
+  border: 0px;
 }
 .container.right-panel-active .sign-in {
+  transform: translateX(100%);
+}
+.container.right-panel-active .sign-up {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
@@ -122,12 +122,17 @@ button:active {
   z-index: 100;
 }
 .container.right-panel-active .overlay-container {
-  transform: translate(-100%);
+  transform: translateX(-100%);
+}
+.overlay img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 .overlay {
-  position: relative;
-  color: #0c0c0c;
-  background: url(img/bglogin.png);
+  position: absolute;
+  color: #ffffff;
   left: -100%;
   height: 100%;
   width: 200%;
@@ -180,6 +185,6 @@ button:active {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 50%;
 }

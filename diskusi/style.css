@@ -1,4 +1,7 @@
 /* Navbar */
+body {
+  margin: 0;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -6,10 +9,22 @@ nav {
   background-color: #86c8bc;
   color: white;
   padding: 10px;
+  top: 0;
+  width: 100%;
+  position: fixed;
 }
 
 .logo img {
   height: 50px;
+  padding: 0 10px 0 10px;
+}
+.logo p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10px 0 0;
+  color: white;
+  font-size: 25px;
 }
 
 .menu {
@@ -230,6 +245,7 @@ nav {
 }
 
 /* end card */
+/* footer */
 footer {
   background-color: #86c8bc;
   color: #fff;
@@ -285,3 +301,5 @@ footer a i {
 .fa-instagram {
   color: #3c6b86;
 }
+
+/* end footer */
