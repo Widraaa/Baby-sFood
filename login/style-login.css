@@ -98,6 +98,7 @@ button {
 button:active {
   transform: scale(0.9);
 }
+
 #signIn,
 #signUp {
   background-color: #ffd4b2;
