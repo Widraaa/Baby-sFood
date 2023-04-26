@@ -4,16 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="style-login.css" />
+    
+    <title>LOGIN</title>
+    
+    <!-- Favicons -->
+     <link href="../img/logo.png" rel="icon">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <!--GOOGLE FONT-->
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+      <link rel="stylesheet" type="text/css" href="style-login.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   </head>
   <body>
+    <!-- ======= LOGIN ======= -->
     <div class="container" id="main">
+      <div class="sign-in">
+        <form action="#">
+          <h1>MASUK</h1>
+
+          <input type="email" name="email" placeholder="Email" required="" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required=""
+          />
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="remember">
+              <label class="form-check-label" for="remember">Remember me</label>
+              <span class="forget-password"><a href="#">Forget password</a></span>
+            </div>
+          </div>
+          <button>MASUK</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <img src="../img/bglogin.png" alt="" />
+          <div class="overlay-left">
+            <h1 style="color: #faf4b7">Welcome, Mom !</h1>
+            <p>Nice To Meet You</p>
+            <br>
+            <br>
+            <p>
+              "Tetap sederhana, karena hidup sederhana dan pemikiran sederhana
+              dapat membuka pintu menuju kehidupan yang lebih inspiratif."
+            </p>
+            <button id="signIn">Masuk</button>
+          </div>
+          <div class="overlay-right">
+            <h1 style="color: #faf4b7">Welcome, Mom !</h1>
+            <p class="nice">Nice To Meet You</p>
+            <p>Jika belum memiliki akun, Silahkan registrasi dibawah ini!</p>
+            <button id="signUp">Daftar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= REGISTER ======= -->
       <div class="sign-up">
         <form action="#">
           <h1>BUAT AKUN</h1>
@@ -34,41 +85,6 @@
           <p>Atau Sign Up menggunakan email anda</p>
           <button>DAFTAR</button>
         </form>
-      </div>
-      <div class="sign-in">
-        <form action="#">
-          <h1>MASUK</h1>
-
-          <input type="email" name="email" placeholder="Email" required="" />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required=""
-          />
-          <a href="forgetpassword.html">Lupa Password?</a>
-          <button>MASUK</button>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <img src="../img/bglogin.png" alt="" />
-          <div class="overlay-left">
-            <h1 style="color: #faf4b7">Welcome, Mom !</h1>
-            <p>Nice To Meet You</p>
-            <p>
-              "Tetap sederhana, karena hidup sederhana dan pemikiran sederhana
-              dapat membuka pintu menuju kehidupan yang lebih inspiratif."
-            </p>
-            <button id="signIn">Masuk</button>
-          </div>
-          <div class="overlay-right">
-            <h1 style="color: #faf4b7">Welcome, Mom !</h1>
-            <p>Nice To Meet You</p>
-            <p>Jika belum memiliki akun, Silahkan registrasi dibawah ini!</p>
-            <button id="signUp">Daftar</button>
-          </div>
-        </div>
       </div>
     </div>
     <script type="text/javascript">

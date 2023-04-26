@@ -1,28 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: 'Quicksand', sans-serif;
   align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: #dfdfdf;
-  font-family: "monserrat", sans-serif;
-  min-width: 100%;
-  margin: 8%;
+  margin: 4%;
 }
 
 .container {
   position: relative;
-  width: 768px;
+  justify-content: center;
+  width: 800px;
   max-width: 100%;
   min-height: 480px;
   background: url(../img/bglogin.png);
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(25, 145, 182, 0.22);
 }
 
 .sign-up,
@@ -60,6 +60,7 @@ h1 {
   color: #fff;
   margin: 15px 0 20px;
 }
+
 p {
   font-size: 14px;
   font-weight: 100;
@@ -68,7 +69,9 @@ p {
   margin: 15px 0 20px;
   color: #fff;
 }
+
 input {
+  position: relative;
   background: #eee;
   padding: 12px 15px;
   margin: 8px 15px;
@@ -77,6 +80,7 @@ input {
   border: none;
   outline: none;
 }
+
 a {
   color: #fff;
   font-size: 14px;
@@ -87,19 +91,22 @@ a {
 button {
   color: #fff;
   background: #86c8bc;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   padding: 12px 120px;
   margin: 20px;
   border-radius: 15px;
+  border-color:#3c6b86 ;
   outline: none;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   cursor: pointer;
 }
+
 button:active {
   transform: scale(0.9);
+  background: #3c6b86;
 }
 
 #signIn,
@@ -134,6 +141,7 @@ button:active {
   width: 100%;
   height: auto;
 }
+
 .overlay {
   position: absolute;
   color: #ffffff;
@@ -191,4 +199,31 @@ button:active {
   align-items: center;
   border: 1px solid #fff;
   border-radius: 50%;
+}
+
+.form-group {
+  margin-bottom: 0.25rem;
+  
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-right: 2.5rem;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1 px;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-check-input {
+  margin-right: 0.25rem;
+  align-content: space-between;
+}
+
+.forget-password {
+  margin-left: 8rem;
+  font-size: 13px;
 }
