@@ -11,7 +11,7 @@ body {
   background: #dfdfdf;
   font-family: "monserrat", sans-serif;
   min-width: 100%;
-  margin: 10%;
+  margin: 8%;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
   width: 768px;
   max-width: 100%;
   min-height: 480px;
-  background: #df9f6d;
+  background: url(../img/bglogin.png);
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -45,7 +45,7 @@ body {
 }
 
 form {
-  background: #ffd4b2;
+  background: #3c6b86;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +57,8 @@ form {
 h1 {
   font-weight: bold;
   margin: 0;
+  color: #fff;
+  margin: 15px 0 20px;
 }
 p {
   font-size: 14px;
@@ -64,6 +66,7 @@ p {
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 15px 0 20px;
+  color: #fff;
 }
 input {
   background: #eee;
@@ -75,15 +78,15 @@ input {
   outline: none;
 }
 a {
-  color: #333;
+  color: #fff;
   font-size: 14px;
   text-decoration: none;
   margin: 15px 0;
 }
 
 button {
-  color: #000000;
-  background: #e19961;
+  color: #fff;
+  background: #86c8bc;
   font-size: 12px;
   font-weight: bold;
   padding: 12px 120px;
@@ -101,7 +104,7 @@ button:active {
 
 #signIn,
 #signUp {
-  background-color: #ffd4b2;
+  background-color: #3c6b86;
   border: 0px;
 }
 .container.right-panel-active .sign-in {
@@ -186,6 +189,6 @@ button:active {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000000;
+  border: 1px solid #fff;
   border-radius: 50%;
 }
