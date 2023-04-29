@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -22,7 +22,8 @@ body {
   background: url(../img/bglogin.png);
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(25, 145, 182, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(25, 145, 182, 0.22);
 }
 
 .sign-up,
@@ -96,7 +97,7 @@ button {
   padding: 12px 120px;
   margin: 20px;
   border-radius: 15px;
-  border-color:#3c6b86 ;
+  border-color: #3c6b86;
   outline: none;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -114,14 +115,22 @@ button:active {
   background-color: #3c6b86;
   border: 0px;
 }
-.container.right-panel-active .sign-in {
+
+#reset {
+  background-color: #86c8bc;
+  border: 0px;
+}
+
+.container.right-panel-active .sign-in .reset {
   transform: translateX(100%);
 }
+
 .container.right-panel-active .sign-up {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
 }
+
 .overlay-container {
   position: absolute;
   top: 0;
@@ -203,7 +212,6 @@ button:active {
 
 .form-group {
   margin-bottom: 0.25rem;
-  
 }
 
 .form-check {
