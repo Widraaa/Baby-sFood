@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- my style -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <title>Baby's Food</title>
+    
+     <!-- Favicons -->
+    <link href="../img/logo.png" rel="icon" />
+  </head>
+  <body>
+    <!-- Navbar  Before login-->
+    <!-- <nav
+      class="navbar fixed-top navbar-expand-lg navbar-light bg-costum shadow"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="../img/logo.png"
+            class="rounded-circle img-nav"
+            alt=""
+          />BABY'S FOOD</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="nasitim.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >MPASI</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="nasitim.html"
+                    >INFORMASI MPASI</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="nasimpasi.html"
+                    >RESEP NASI TIM MPASI</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="buburmpasi.html"
+                    >RESEP BUBUR MPASI</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="purempasi.html"
+                    >RESEP PURE MPASI</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="mpasifingerfood.html"
+                    >RESEP FINGER FOOD MPASI</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="diskusi.html"
+                >Discuss</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-block">
+            <a href="../login/index.html"
+              ><button class="btn btn-outline-success" type="submit">
+                Register
+              </button></a
+            >
+
+            <a href="../login/index.html"
+              ><button class="btn btn-success" type="submit">Login</button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav> -->
+    <!-- end navbar -->
+<!-- navbar after login-->
+<nav
+      class="navbar fixed-top navbar-expand-lg navbar-light bg-costum shadow"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="../img/logo.png"
+            class="rounded-circle img-nav"
+            alt=""
+          />BABY'S FOOD</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="nasitim.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >MPASI</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="nasitim.html"
+                    >INFORMASI MPASI</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="nasimpasi.html"
+                    >RESEP NASI TIM MPASI</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="buburmpasi.html"
+                    >RESEP BUBUR MPASI</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="purempasi.html"
+                    >RESEP PURE MPASI</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="mpasifingerfood.html"
+                    >RESEP FINGER FOOD MPASI</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="diskusi.html"
+                >Discuss</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- <a class="nav-profil" id="user" href="#"><img src="../img/usernavbar.png" alt="User Navbar" /></i></a> -->
+          <div class="user-logo">
+            <img src="../img/usernavbar.png" alt="User Avatar" />
+            <div class="user-dropdown">
+              <ul>
+                <li><a href="#">Edit Profile</a></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- end navbar -->
+    <!-- Content 1 - parallax -->
+
+    <div class="parallax">
+      <video autoplay loop muted>
+        <source src="../img/Paralax.webm" type="video/webm" />
+      </video>
+      <div class="header">
+        <img src="../img/question-white.png" alt="question" />
+        <h1>Selamat Datang di Forum Diskusi MPASI</h1>
+        <br />
+      </div>
+      <br />
+      <h3>Tanyakan apa saja mengenai MPASI</h3>
+    </div>
+
+    <!-- End Content - parallax -->
+    <!-- content 2 -->
+    <section class="content2">
+      <div class="grid-container2">
+        <!-- back -->
+        <main class="web-main">
+          <a href="index.html"
+            ><i class="bi bi-arrow-left"></i> kembali ke Forum Diskusi</a
+          >
+
+          <div class="container container-lihat-diskusi">
+            <div class="header-v2"><h1>Apa makanan MPASI?</h1></div>
+            <div class="row">
+              <div class="col-12">
+                <article class="card custom-card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>
+                        <img
+                          src="../img/Juliana.png"
+                          class="fp-di-lihat-diskusi d-none d-sm-none d-md-inline"
+                          alt=""
+                        />
+                        <!-- <small class="text-muted"> -->
+                        <span id="penginput-diskusi">
+                          <a href="#">Juliana</a> </span
+                        ><br />
+                        <!-- </small> -->
+                      </span>
+                      <span>
+                        <small class="text-muted"> 2 hari yang lalu </small>
+                      </span>
+                    </div>
+                    <hr />
+                    <p>Makanannya apa aja sih bun?</p>
+                    <hr />
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <small class="text-muted"
+                        ><span id="jumlah-jawaban-diskusi"
+                          ><i class="bi bi-chat-left-text-fill iconcolor1"></i
+                        ></span>
+                        3 Jawaban</small
+                      >
+                    </div>
+                  </div>
+                </article>
+                <div class="card mt-3 mb-3 custom-card " id="awal-jawaban">
+                  <div class="card-body text-start f-bt">
+                    <a href="http://"><i class="bi bi-type-bold iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-type-italic iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-type-underline iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-text-center iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-justify-right iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-justify iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-list-ul iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-list-ol iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-paint-bucket iconcolor2"></i></a>
+                    <a href="http://"><i class="bi bi-fonts iconcolor2"></i></a>
+                  </div>
+                  <textarea class="form-control" id="message-text" placeholder="Ketik sesuatu disini ..."></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">
+                    Buat pertanyaan
+                  </button>
+                  </div>
+                
+                <div id="jawaban">
+                  <div class="card mb-2 custom-card">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span>
+                          <img
+                            src="../img/maijah.png"
+                            class="fp-di-jawaban d-none d-sm-none d-md-inline"
+                            alt="Foto Profil dwiarfian"
+                          />
+                          <small class="text-muted">
+                            <span id="pengguna-jawaban">
+                              <span>
+                                <a href="#">maijah</a>
+                              </span>
+                            </span>
+                          </small>
+                        </span>
+                        <span>
+                          <small class="text-muted"> 1 hari yang lalu </small>
+                        </span>
+                      </div>
+                      <hr />
+                      <p>bubur</p>
+                      <hr />
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <small class="text-muted"
+                          ><span id="jumlah-jawaban-diskusi"
+                            ><i
+                              class="bi bi-chat-left-text-fill iconcolor2"
+                            ></i>
+                            Balas |
+                            <i class="bi bi-heart-fill iconcolor1"></i>
+                              </i
+                            >1 Like
+                          </span></small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-2 custom-card">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span>
+                          <img
+                            src="../img/siti.png"
+                            
+                            class="fp-di-jawaban d-none d-sm-none d-md-inline"
+                            alt="Foto Profil siti"
+                          />
+                          <small class="text-muted">
+                            <span id="pengguna-jawaban">
+                              <span>
+                                <a
+                                  href="#"
+                                  >Siti</a
+                                >
+                                
+                              </span>
+                            </span>
+                          </small>
+                        </span>
+                        <span>
+                          <small class="text-muted"> 1 hari yang lalu </small>
+                        </span>
+                      </div>
+                      <hr />
+                      <p>selain bubur apa lagi ya?</p>
+                      <hr />
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <small class="text-muted"
+                          ><span id="jumlah-jawaban-diskusi"
+                            ><i
+                              class="bi bi-chat-left-text-fill iconcolor2"
+                            ></i>
+                            Balas |
+                            <i class="bi bi-heart-fill iconcolor1"></i>
+                              </i
+                            >1 Like
+                          </span></small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-2 custom-card">
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span>
+                          <img
+                            src="../img/putri.png"
+                            
+                            class="fp-di-jawaban d-none d-sm-none d-md-inline"
+                            alt="Foto Profil putri"
+                          />
+                          <small class="text-muted">
+                            <span id="pengguna-jawaban">
+                              <span>
+                                <a
+                                  href="#"
+                                  >putri</a
+                                >
+                                
+                              </span>
+                            </span>
+                          </small>
+                        </span>
+                        <span>
+                          <small class="text-muted"> 1 hari yang lalu </small>
+                        </span>
+                      </div>
+                      <hr />
+                      <p>mending telur</p>
+                      <hr />
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <small class="text-muted"
+                          ><span id="jumlah-jawaban-diskusi"
+                            ><i
+                              class="bi bi-chat-left-text-fill iconcolor2"
+                            ></i>
+                            Balas |
+                            <i class="bi bi-heart-fill iconcolor1"></i>
+                              </i
+                            >1 Like
+                          </span></small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm btn-block rounded-lg"
+                  >Masuk untuk berdiskusi</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary btn-sm btn-block rounded-lg"
+                  >Kembali Ke Halaman Daftar Diskusi</a
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- end tombol -->
+        <!-- card -->
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#F9F6EE"
+        fill-opacity="1"
+        d="M0,64L48,53.3C96,43,192,21,288,58.7C384,96,480,192,576,213.3C672,235,768,181,864,144C960,107,1056,85,1152,85.3C1248,85,1344,107,1392,117.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- end content 2 -->
+    <!-- end card -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#86c8bc"
+        fill-opacity="1"
+        d="M0,224L48,192C96,160,192,96,288,96C384,96,480,160,576,192C672,224,768,224,864,192C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+    <footer>
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+        </li>
+      </ul>
+      <p>Copyright | Baby’s Food @2023</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
