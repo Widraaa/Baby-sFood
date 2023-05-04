@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!--Animated AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -17,15 +18,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>BABY'S FOOD</title>
+    <!-- Favicons -->
+    <link href="../img/logo.png" rel="icon" />
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-costum shadow">
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-light bg-costum shadow"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="home.html"
           ><img
-            src="img/logo1.jpeg"
+            src="../img/logo.png"
             class="rounded-circle img-nav"
             alt=""
           />BABY'S FOOD</a
@@ -44,17 +54,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"
-                >Home</a
-              >
+              <a class="nav-link" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="informasi-mpasi.html"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -63,7 +71,7 @@
               >
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="nasitim.html"
+                  <a class="dropdown-item" href="informasi-mpasi.html"
                     >INFORMASI MPASI</a
                   >
                 </li>
@@ -94,13 +102,26 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Discuss</a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="diskusi/forum-diskusi.html"
+                >Discuss</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <a class="nav-profil" href="#"><i class="bi bi-person-circle"></i></a>
+          <div class="user-logo">
+            <img src="../img/usernavbar.png" alt="User Avatar" />
+            <div class="user-dropdown">
+              <ul>
+                <li><a href="/Akun/index.html">Edit Profile</a></li>
+                <li><a href="/login/">Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -121,12 +142,12 @@
       </div>
     </div>
 
-    <div class="container-fluid1">
+    <div class="container-fluid1" style="height: 400px">
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h1 class="text-center py-3">Apa itu Mpasi?</h1>
-            <p>
+            <h1 class="underline text-center py-3 mb-3">Apa itu Mpasi?</h1>
+            <p class="fs-5 mt-2" data-aos="zoom-in-right">
               Makanan Pendamping Asi (Mpasi) diberikan pada bayi setelah
               menginjak usia enam bulan. Seperti namanya, makanan ini diberikan
               sebagai pendamping bagi bayi yang menyusui. untuk mengolah Mpasi
@@ -136,25 +157,25 @@
             </p>
           </div>
 
-          <div class="col-5">
+          <div class="col-5" data-aos="zoom-in-left">
             <img src="img/fotopisang.png" alt="" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid2">
+    <div class="container-fluid2" style="height: 400px">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6" data-aos="zoom-out">
             <img src="img/fotochart.png" alt="" />
           </div>
 
           <div class="col-5">
-            <h1 class="text-center py-3">
+            <h1 class="underline text-center py-3">
               Bagaimana Pemberian Mpasi yang benar?
             </h1>
-            <p>
+            <p class="fs-5 mt-2" data-aos="zoom-out-up">
               Fase ini penting karena kekurangan atau kelebihan zat gizi pada
               usia 0-2 tahun umumnya berdampak pada kualitas hidup jangka pendek
               dan panjang. Terlebih lagi dampak tersebut umumnya tidak bisa
@@ -171,7 +192,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <p class="fs-5">
+            <p class="fs-4" data-aos="fade-up" data-aos-duration="3000">
               Badan Kesehatan dunia atau World Health Organisation ( WHO) pada
               tahun 2003 mengeluarkan rekomendasi tentang cara pemberian Mpasi
               yang benar, yaitu Mpasi yang baik adalah memenuhi 4 syarat:
@@ -180,81 +201,51 @@
         </div>
       </div>
     </div>
-
-    <div class="container-fluid4">
-      <div class="container">
-        <div class="row">
-          <div class="col-3">
-            <div
-              class="card text-center"
-              style="
-                width: 18rem;
-                height: 150px;
-                background-color: #ffd4b2;
-                border-radius: 10px;
-              "
-            >
-              <div class="card-body">
-                <h5 class="card-title">Tepat Waktu</h5>
-                <p class="card-text">
-                  Makanan pendamping harus diberikan saat Asi Eksklusif sudah
-                  tidak dapat memenuhi kebutuhan gizi bayi.
-                </p>
-              </div>
+    <div class="container mb-2">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="3000">
+            <div class="card-body">
+              <h5 class="card-title text-center">Tepat Waktu</h5>
+              <p class="card-text">
+                Makanan pendamping harus diberikan saat Asi Eksklusif sudah
+                tidak dapat memenuhi kebutuhan gizi bayi.
+              </p>
             </div>
           </div>
-          <div class="col-3">
-            <div
-              class="card text-center"
-              style="
-                width: 18rem;
-                background-color: #ffd4b2;
-                border-radius: 10px;
-              "
-            >
-              <div class="card-body">
-                <h5 class="card-title">ADEKUAT</h5>
-                <p class="card-text">
-                  Harus memiliki kandungan energi, protein, dan zat mikro yang
-                  dapat memenuhi kebutuhan zat gizi bayi seusianya.
-                </p>
-              </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" data-aos="flip-right" data-aos-duration="2000">
+            <div class="card-body">
+              <h5 class="card-title text-center">ADEKUAT</h5>
+              <p class="card-text">
+                Harus memiliki kandungan energi, protein, dan zat mikro yang
+                dapat memenuhi kebutuhan zat gizi bayi seusianya.
+              </p>
             </div>
           </div>
-          <div class="col-3">
-            <div
-              class="card text-center"
-              style="
-                width: 18rem;
-                background-color: #ffd4b2;
-                border-radius: 10px;
-              "
-            >
-              <div class="card-body">
-                <h5 class="card-title">Aman</h5>
-                <p class="card-text">
-                  Disiapkan dan disimpan dengan cara yang higienies, diberikan
-                  menggunakan tangan ataupun peralatan makan yang bersih.
-                </p>
-              </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="3000">
+            <div class="card-body">
+              <h5 class="card-title text-center">Aman</h5>
+              <p class="card-text">
+                Disiapkan dan disimpan dengan cara yang higienies, diberikan
+                menggunakan tangan ataupun peralatan makan yang bersih.
+              </p>
             </div>
           </div>
-          <div class="col-3">
-            <div
-              class="card text-center"
-              style="
-                width: 18rem;
-                background-color: #ffd4b2;
-                border-radius: 10px;
-              "
-            >
-              <div class="card-body">
-                <h5 class="card-title">Diberikan dengan cara yang benar</h5>
-                <p class="card-text">
-                  Pemberian makanan pendamping harus memperhatikan sinyal rasa
-                  lapar dan kenyang seorang anak.
-                </p>
-              </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" data-aos="flip-right" data-aos-duration="2000">
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Diberikan dengan cara yang benar
+              </h5>
+              <p class="card-text">
+                Pemberian makanan pendamping harus memperhatikan sinyal rasa
+                lapar dan kenyang seorang anak./p>
+              </p>
             </div>
           </div>
         </div>
@@ -264,23 +255,48 @@
     <div class="container-fluid5 py-5">
       <div class="v160_1059">
         <div class="v157_574"></div>
-        <div class="v160_1192">
+        <div
+          class="v160_1192"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000"
+        >
           <div class="v157_576"></div>
           <span class="v157_573">Resep Mpasi sesuai umur anak anda.</span>
         </div>
-        <div class="v160_1188">
+        <div
+          class="v160_1188"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000"
+        >
           <div class="v157_577"></div>
           <span class="v157_581">Nasi Tim</span>
         </div>
-        <div class="v160_1189">
+        <div
+          class="v160_1189"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000"
+        >
           <div class="v157_578"></div>
           <span class="v157_582">Bubur</span>
         </div>
-        <div class="v160_1190">
+        <div
+          class="v160_1190"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000"
+        >
           <div class="v157_579"></div>
           <span class="v157_583">PUREE</span>
         </div>
-        <div class="v160_1191">
+        <div
+          class="v160_1191"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000"
+        >
           <div class="v157_580"></div>
           <span class="v157_584">Finger Food</span>
         </div>
@@ -291,10 +307,10 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h1 class="text-center py-3">
+            <h1 class="underline text-center py-3">
               Bolehkah menambah garam dan gula pada Mpasi?
             </h1>
-            <p>
+            <p class="fs-5 mt-2">
               Garam dan Gula dapat ditambahkan, tapi ada peraturan untuk
               menambahkan kedua bahan sebagai bumbu. National Health Service
               merekomendasikan asupan garam untuk anak sebagai berikut : Pada
@@ -315,17 +331,25 @@
 
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-10 info-panel" style="border-radius: 20px">
-          <div class="row mx-1 my-lg-3">
+        <div
+          class="col-lg-11 info-panel"
+          data-aos="flip-down"
+          style="
+            border-radius: 20px;
+            background: linear-gradient(to right, #ffd4b2, #f7f2f2);
+            height: 400px;
+          "
+        >
+          <div class="row mx-1 my-lg-3 fw-bold fs-3">
             <p>Sekedar Info!!</p>
           </div>
-          <div class="row text-center my-3">
+          <div class="row text-center my-5 fw-bold fs-5">
             <p>
               Untuk Anda yang belum paham istilah "1 sendok teh peres", berikut
               ini penjelasannya.
             </p>
           </div>
-          <div class="row text-center mb-lg-3">
+          <div class="row text-center my-5 fw-bold fs-5">
             <p>
               "Gula sebanyak 1 sendok teh peres". Berarti ambil gula memenuhi 1
               sendok <br />
@@ -336,28 +360,40 @@
         </div>
       </div>
     </div>
-
+<!-- footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#86c8bc"
+        fill-opacity="1"
+        d="M0,224L48,192C96,160,192,96,288,96C384,96,480,160,576,192C672,224,768,224,864,192C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
     <footer>
-      <div class="social-media">
-        <a href="https://www.facebook.com"
-          ><img src="img/Facebook.png" alt="Facebook"
-        /></a>
-        <a href="https://www.instagram.com"
-          ><img src="img/Instagram.png" alt="Instagram"
-        /></a>
-        <a href="https://www.twitter.com"
-          ><img src="img/Twitter.png" alt="Twitter"
-        /></a>
-      </div>
-      <hr />
-      <p class="copyright">&copy; Copyright | Baby’s Food @2023</p>
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+        </li>
+      </ul>
+      <p>Copyright | Baby’s Food @2023</p>
     </footer>
-
+<!-- end footer -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

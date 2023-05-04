@@ -1,9 +1,245 @@
-.img-nav {
-  height: 50px;
-  padding-right: 20px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #86c8bc;
+  top: 0;
+  width: 100%;
+  position: fixed;
 }
-i {
+
+nav img {
   height: 50px;
+  padding: 0 10px 0 10px;
+  margin-left: 18px;
+}
+.navbar-brand {
+  -webkit-text-fill-color: white;
+  font-size: 16px;
+}
+.navbar-nav {
+  -webkit-text-fill-color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-nav a {
+  -webkit-text-fill-color: white;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  margin-left: 7rem;
+}
+
+.navbar-nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #eeceb4;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  background-color: #86c8bc;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  display: none;
+  border: 1px solid white;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  margin: 0 0;
+
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-nav a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.user-logo {
+  position: relative;
+  display: inline-block;
+}
+
+.user-logo img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  background-color: #86c8bc;
+  border: 1px solid #f9f6ee;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.user-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-dropdown li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.user-dropdown li a:hover {
+  background-color: #f2f2f2;
+}
+
+.user-logo:hover .user-dropdown {
+  display: block;
+}
+
+.btn-outline-success .btn-success {
+  background-color: #86c8bc;
+  color: #fff;
+}
+/* end nav */
+/* Paralax */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.parallax video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -9999;
+}
+
+.parallax img {
+  display: block;
+  margin-right: 44px;
+}
+
+.parallax h1 {
+  text-align: justify;
+  font-size: 48px;
+  width: fit-content;
+  margin: 0;
+}
+.parallax h3 {
+  font-weight: normal;
+  align-items: center;
+  padding-left: 28%;
+  font-size: 30px;
+  color: #e2e2e2;
+}
+/* end paralax */
+/* carousel */
+.content {
+  max-width: 60rem;
+}
+.text-tengah {
+  text-align: center;
+}
+
+.carousel-caption {
+  font-size: 48px;
+  width: 400px;
+  color: #fff;
+  text-align: justify;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  transform: translate(0, -50%);
+}
+/* end carousel */
+/* card */
+.contact-content1 .card {
+  justify-content: center;
+}
+
+.isi-contact button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #b1d4e0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card {
+  margin: 10px;
+  height: 100%;
+  background-color: #ffd4b2;
+  border-radius: 20px;
+}
+.isi-contact .card {
+  margin: 10px 10%;
+  width: 512px;
+  height: 133px;
+  background-color: #b1d4e0;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  -webkit-text-fill-color: white;
+  font-size: 18px;
+}
+.form-control {
+  border-radius: 10px;
+  padding: 15px;
+}
+.card:hover {
+  box-shadow: 0px 0px 10px 2px rgba(22, 220, 209, 0.8);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 2px solid black; /* ubah warna dan ketebalan garis sesuai keinginan */
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 .nav-profil {
   margin-right: 30px;
@@ -23,15 +259,101 @@ i {
   background-size: cover;
   background-position: center;
 }
-/* carousel */
 
-/* end carousel */
+.button-hover-banner {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #ffd4b2;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.button-hover-banner:hover {
+  background: #ffd4b2;
+  box-shadow: 0 0 30px 5px #ffd3b2e0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.button-hover-banner:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.button-hover-banner::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.button-hover-banner:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+/* end button hover banner */
 
 .content {
   max-width: 60rem;
 }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.jumbo-picture .content h3 {
+  padding-top: 150px;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 30px;
+}
+/* end hero */
+
+/* isi contact */
+
+.content h3 {
   font-size: 6rem;
   text-transform: uppercase;
   color: #fff;
@@ -99,6 +421,7 @@ i {
   height: 100vh;
   background-image: url(img/foto1.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero1 {
   height: 100vh;
@@ -377,35 +700,88 @@ body {
   border-bottom: 1px solid black;
 }
 
+/* footer */
 footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 20px;
   background-color: #86c8bc;
+  color: #fff;
+  padding: 4px;
+  text-align: center;
+}
+footer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.social-media {
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+footer a span {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer a:hover span {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
-.social-media a {
-  margin: 0 10px;
+footer a i {
+  font-size: 24px;
+  margin-right: 10px;
 }
 
-.social-media img {
-  height: 30px;
+.fa-facebook {
+  color: #3c6b86;
 }
 
-hr {
-  border: none;
-  border-top: 2px solid white;
+.fa-twitter {
+  color: #3c6b86;
 }
 
-.copyright {
-  color: white;
-  font-size: 14px;
-  align-items: center;
+.fa-instagram {
+  color: #3c6b86;
+}
+
+/* end footer */
+.text-white {
+  border-right: 0.15em solid #000;
+  font-size: 32px;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(40, end), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
 }
