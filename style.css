@@ -165,8 +165,17 @@ nav img {
 .content {
   max-width: 60rem;
 }
+
 .text-tengah {
   text-align: center;
+}
+.aboutus-content1 h1
+{
+  font-size: 64px;
+}
+.aboutus-content1 p
+{
+  font-size: 25px;
 }
 
 .carousel-caption {
